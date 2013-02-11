@@ -37,6 +37,9 @@ nmap <D-4> g$
 nmap <D-6> g^
 nmap <D-0> g^
 
+"make Y consistent with C and D
+nnoremap Y y$
+
 "add some line space for easy reading
 set linespace=4
 
@@ -50,7 +53,7 @@ set fo=l
 
 "statusline setup
 set statusline=%f       "tail of the filename
-
+set statusline+=%m
 set statusline+=%=      "left/right separator
 set statusline+=%c,     "cursor column
 set statusline+=%l/%L   "cursor line/total lines
@@ -131,3 +134,6 @@ if $COLORTERM == 'gnome-terminal'
 else
   colorscheme default
 endif
+
+"BufExplorer binding
+noremap <silent> <Leader>b :BufExplorerHorizontalSplit<CR>
