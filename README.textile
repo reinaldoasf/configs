@@ -1,10 +1,13 @@
 h1. My vimfiles.
 
 h2. To download:
+
 bc. git clone git://github.com/eletronzip/vimfiles.git ~/.vim
 
 h2. To install the bundled plugins:
+
 bc. git submodule update --init
 
 h2. To source the vimrc:
+
 bc. echo "source ~/.vim/vimrc" > ~/.vimrc
