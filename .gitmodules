@@ -25,3 +25,6 @@
 [submodule "bundle/vim-autoclose"]
 	path = bundle/vim-autoclose
 	url = https://github.com/Townk/vim-autoclose.git
+[submodule "bundle/arduino-syntax-file"]
+	path = bundle/arduino-syntax-file
+	url = https://github.com/AwesomeController/Arduino-syntax-file.git
