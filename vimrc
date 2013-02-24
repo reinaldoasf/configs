@@ -117,10 +117,8 @@ nmap <C-s> :w<CR>
 nmap <Tab> gt
 nmap <S-Tab> gT
 
-"screenshot settings
-let ScreenShot = {'Icon':0, 'Credits':0, 'force_background':'#FFFFFF'}
-
 "NERD_Tree conf
+let NERDTreeWinPos="right"
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 nnoremap <silent> <C-f> :call FindInNERDTree()<CR>
 
