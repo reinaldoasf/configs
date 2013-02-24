@@ -53,8 +53,9 @@ set fo=l
 
 "statusline setup
 set statusline=%f       "tail of the filename
-set statusline+=%m
+set statusline+=%m      "modified flag
 set statusline+=%=      "left/right separator
+set statusline+=%{strlen(&ft)?&ft:'none'}\ -\      "filetype
 set statusline+=%c,     "cursor column
 set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
