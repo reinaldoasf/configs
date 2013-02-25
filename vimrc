@@ -11,6 +11,8 @@ execute pathogen#infect()
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+let g:tex_flavor='latex'
+
 "store lots of :cmdline history
 set history=1000
 
