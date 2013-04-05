@@ -128,6 +128,11 @@ nnoremap <silent> <C-f> :call FindInNERDTree()<CR>
 "yankring_history on .vim folder
 let g:yankring_history_dir='$HOME/.vim/'
 
+"setting dir for swp files
+set dir=/tmp//
+set backupdir=/tmp//
+set backup
+
 "set railscasts colorscheme when running vim in gnome terminal
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
