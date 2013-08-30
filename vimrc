@@ -49,7 +49,7 @@ set linespace=4
 set visualbell t_vb=
 
 "spellcheck
-set spelllang=en,pt
+set spelllang=en_us,pt_br
 
 "try to make possible to navigate within lines of wrapped lines
 nmap <Down> gj
