@@ -50,6 +50,8 @@ set visualbell t_vb=
 
 "spellcheck
 set spelllang=en_us,pt_br
+au BufNewFile,BufRead,BufEnter *.tex setlocal spell
+au BufNewFile,BufRead,BufEnter *.txt setlocal spell
 
 "try to make possible to navigate within lines of wrapped lines
 nmap <Down> gj
