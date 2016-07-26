@@ -139,7 +139,7 @@ set backupdir=/tmp//
 set backup
 
 "set railscasts colorscheme when running vim in gnome terminal
-if $COLORTERM == 'gnome-terminal'
+if $TERM == 'xterm-256color'
   set t_Co=256
   colorscheme railscasts
 else
