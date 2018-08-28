@@ -74,6 +74,7 @@ set guioptions-=T
 "indent settings
 set shiftwidth=2
 set softtabstop=2
+set tabstop=2
 set expandtab
 set autoindent
 
@@ -126,7 +127,7 @@ nmap <Tab> gt
 nmap <S-Tab> gT
 
 "NERD_Tree conf
-let NERDTreeWinPos="right"
+let NERDTreeWinPos="left"
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 nnoremap <silent> <C-f> :call FindInNERDTree()<CR>
 
