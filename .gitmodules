@@ -30,7 +30,7 @@
 	url = https://github.com/AwesomeController/Arduino-syntax-file.git
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
-	url = https://gitlab.com/dvcirilo/snipmate-snippets.git
+	url = https://dvcirilo@gitlab.com/dvcirilo/snipmate-snippets.git
 [submodule "bundle/vim-ragtag"]
 	path = bundle/vim-ragtag
 	url = https://github.com/tpope/vim-ragtag.git
@@ -43,3 +43,6 @@
 [submodule "bundle/vim-addon-mw-utils"]
 	path = bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/systemverilog.vim"]
+	path = bundle/systemverilog.vim
+	url = https://github.com/nachumk/systemverilog.vim
