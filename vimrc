@@ -26,6 +26,10 @@ set number      "add line numbers
 set showbreak=...
 set wrap linebreak nolist
 
+"show line in column 80 
+"highlight ColorColumn ctermbg=236
+set colorcolumn=80 
+
 "mapping for command key to map navigation thru display lines instead
 "of just numbered lines
 vmap <D-j> gj
@@ -72,8 +76,8 @@ set laststatus=2
 set guioptions-=T
 
 "indent settings
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set autoindent
 
@@ -126,7 +130,7 @@ nmap <Tab> gt
 nmap <S-Tab> gT
 
 "NERD_Tree conf
-let NERDTreeWinPos="right"
+let NERDTreeWinPos="left"
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 nnoremap <silent> <C-f> :call FindInNERDTree()<CR>
 
@@ -147,4 +151,4 @@ else
 endif
 
 "BufExplorer binding
-noremap <silent> <Leader>b :BufExplorerHorizontalSplit<CR>
+noremap <silent> <Leader>b :BufExplorerVerticalSplit<CR>
