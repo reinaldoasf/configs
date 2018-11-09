@@ -46,3 +46,6 @@
 [submodule "bundle/systemverilog.vim"]
 	path = bundle/systemverilog.vim
 	url = https://github.com/nachumk/systemverilog.vim
+[submodule "bundle/vim-bracketed-paste"]
+	path = bundle/vim-bracketed-paste
+	url = https://github.com/ConradIrwin/vim-bracketed-paste
