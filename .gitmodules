@@ -29,7 +29,7 @@
 	path = bundle/arduino-syntax-file
 	url = https://github.com/AwesomeController/Arduino-syntax-file.git
 [submodule "bundle/vim-snippets"]
-	path = bundle/snipmate-snippets
+	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
 [submodule "bundle/vim-ragtag"]
 	path = bundle/vim-ragtag
