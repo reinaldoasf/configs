@@ -1,48 +1,48 @@
 [submodule "bundle/vim-pathogen"]
-	path = pack/bundle/start/vim-pathogen
+	path = pack/dvcirilo/start/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
 [submodule "bundle/nerdtree"]
-	path = pack/bundle/start/nerdtree
+	path = pack/dvcirilo/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/nerdcommenter"]
-	path = pack/bundle/start/nerdcommenter
+	path = pack/dvcirilo/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "bundle/vim-surround"]
-	path = pack/bundle/start/vim-surround
+	path = pack/dvcirilo/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/vim-endwise"]
-	path = pack/bundle/start/vim-endwise
+	path = pack/dvcirilo/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
 [submodule "bundle/supertab"]
-	path = pack/bundle/start/supertab
+	path = pack/dvcirilo/start/supertab
 	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/vim-autoclose"]
-	path = pack/bundle/start/vim-autoclose
+	path = pack/dvcirilo/start/vim-autoclose
 	url = https://github.com/Townk/vim-autoclose.git
 [submodule "bundle/arduino-syntax-file"]
-	path = pack/bundle/start/arduino-syntax-file
+	path = pack/dvcirilo/start/arduino-syntax-file
 	url = https://github.com/AwesomeController/Arduino-syntax-file.git
 [submodule "bundle/vim-ragtag"]
-	path = pack/bundle/start/vim-ragtag
+	path = pack/dvcirilo/start/vim-ragtag
 	url = https://github.com/tpope/vim-ragtag.git
 [submodule "bundle/vim-snipmate"]
-	path = pack/bundle/start/vim-snipmate
+	path = pack/dvcirilo/start/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
 [submodule "bundle/tlib_vim"]
-	path = pack/bundle/start/tlib_vim
+	path = pack/dvcirilo/start/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
 [submodule "bundle/vim-addon-mw-utils"]
-	path = pack/bundle/start/vim-addon-mw-utils
+	path = pack/dvcirilo/start/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
 [submodule "bundle/systemverilog.vim"]
-	path = pack/bundle/start/systemverilog.vim
+	path = pack/dvcirilo/start/systemverilog.vim
 	url = https://github.com/nachumk/systemverilog.vim
 [submodule "bundle/vim-bracketed-paste"]
-	path = pack/bundle/start/vim-bracketed-paste
+	path = pack/dvcirilo/start/vim-bracketed-paste
 	url = https://github.com/ConradIrwin/vim-bracketed-paste
 [submodule "bundle/vim-snippets"]
-	path = pack/bundle/start/vim-snippets
+	path = pack/dvcirilo/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
 [submodule "bundle/lightline.vim"]
-	path = pack/bundle/start/lightline.vim
+	path = pack/dvcirilo/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
