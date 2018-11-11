@@ -42,7 +42,7 @@ au BufNewFile,BufRead *.v set ft=verilog
 nmap <Down> gj
 nmap <Up> gk
 
-"statusline setup
+"statusline setup when lighline is not present
 set statusline=%f               "tail of the filename
 set statusline+=%m              "modified flag
 set statusline+=%=              "left/right separator
