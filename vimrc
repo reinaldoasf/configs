@@ -43,13 +43,13 @@ nmap <Down> gj
 nmap <Up> gk
 
 "statusline setup
-"set statusline=%f               "tail of the filename
-"set statusline+=%m              "modified flag
-"set statusline+=%=              "left/right separator
-"set statusline+=%{strlen(&ft)?&ft:'none'}\ -\      "filetype
-"set statusline+=%c,             "cursor column
-"set statusline+=%l/%L           "cursor line/total lines
-"set statusline+=\ %P            "percent through file
+set statusline=%f               "tail of the filename
+set statusline+=%m              "modified flag
+set statusline+=%=              "left/right separator
+set statusline+=%{strlen(&ft)?&ft:'none'}\ -\      "filetype
+set statusline+=%c,             "cursor column
+set statusline+=%l/%L           "cursor line/total lines
+set statusline+=\ %P            "percent through file
 set laststatus=2
 
 "indent settings
@@ -60,7 +60,7 @@ set expandtab
 set autoindent
 
 "indent settings for specific langs
-au FileType ruby setlocal ts=2 sw=2 sts=2   "set tabs for Ruby
+au FileType ruby setlocal ts=2 sw=2 sts=2
 
 "folding settings
 set foldmethod=indent           "fold based on indent
@@ -102,7 +102,7 @@ set backup
 set undofile                " Save undos after file closes
 set undodir=$HOME/.vim/tmp//,/tmp// " where to save undo histories
 set undolevels=1000         " How many undos
-set undoreload=10000        " number of lines to save for undo
+set undoreload=10000       " number of lines to save for undo
 
 "set railscasts colorscheme when running vim in gnome terminal
 if $TERM == 'xterm-256color'
@@ -112,18 +112,14 @@ else
   colorscheme default
 endif
 
-" *** Plugins ***
-"As pathogen is used as a submodule, first add its path to the runtime
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-
-"Then pathogen is called do add all the plugins
-execute pathogen#infect()
+" ***********************
+" *** Plugin Settings ***
+" ***********************
+"plugins are managed by Vim8 native system
+"simply add the plugin folder to ~/.vim/pack/bundle/start/
+"or use git submodules
 
 "NERD_Tree conf
 let NERDTreeWinPos="left"
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 nnoremap <silent> <C-f> :call FindInNERDTree()<CR>
-
-"BufExplorer binding
-noremap <silent> <Leader>b :BufExplorerVerticalSplit<CR>
-let g:bufExplorerShowRelativePath=1
