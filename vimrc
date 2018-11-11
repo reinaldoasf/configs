@@ -6,7 +6,7 @@ set nocompatible
 set backspace=indent,eol,start
 
 "store lots of :cmdline history
-set history=1000
+set history=200
 
 set showcmd         "show incomplete cmds down the bottom
 set showmode        "show current mode down the bottom
@@ -21,22 +21,24 @@ set showbreak=...
 "show line in column 80 
 set colorcolumn=80
 
-"make Y consistent with C and D
-nnoremap Y y$
-
 "disable visual bell
 set visualbell t_vb=
 
-"spellcheck for txt and tex files
+"spellcheck langs
 set spelllang=en_us,pt_br
-au BufNewFile,BufRead,BufEnter *.tex setlocal spell
-au BufNewFile,BufRead,BufEnter *.txt setlocal spell
 
 "read tex files as latex
 let g:tex_flavor='latex'
 
 "set *.v files to Verilog
 au BufNewFile,BufRead *.v set ft=verilog
+
+"spellcheck for txt and tex files
+au BufNewFile,BufRead,BufEnter *.tex setlocal spell
+au BufNewFile,BufRead,BufEnter *.txt setlocal spell
+
+"make Y consistent with C and D
+nnoremap Y y$
 
 "try to make possible to navigate within lines of wrapped lines
 nmap <Down> gj
@@ -116,8 +118,13 @@ endif
 " *** Plugin Settings ***
 " ***********************
 "plugins are managed by Vim8 native system
-"simply add the plugin folder to ~/.vim/pack/bundle/start/
+"simply add the plugin folder to ~/.vim/pack/dvcirilo/start/
 "or use git submodules
+"optional plugins (which have to be manually loaded below
+"shoud be placed in ~/.vim/pack/dvcirilo/opt/
+
+"use packadd to add optional plugins
+packadd! matchit         "included matchit plugin
 
 "NERD_Tree conf
 let NERDTreeWinPos="left"
