@@ -35,18 +35,21 @@ au BufNewFile,BufRead,BufEnter *.txt setlocal spell
 "read tex files as latex
 let g:tex_flavor='latex'
 
+"set *.v files to Verilog
+au BufNewFile,BufRead *.v set ft=verilog
+
 "try to make possible to navigate within lines of wrapped lines
 nmap <Down> gj
 nmap <Up> gk
 
 "statusline setup
-set statusline=%f               "tail of the filename
-set statusline+=%m              "modified flag
-set statusline+=%=              "left/right separator
-set statusline+=%{strlen(&ft)?&ft:'none'}\ -\      "filetype
-set statusline+=%c,             "cursor column
-set statusline+=%l/%L           "cursor line/total lines
-set statusline+=\ %P            "percent through file
+"set statusline=%f               "tail of the filename
+"set statusline+=%m              "modified flag
+"set statusline+=%=              "left/right separator
+"set statusline+=%{strlen(&ft)?&ft:'none'}\ -\      "filetype
+"set statusline+=%c,             "cursor column
+"set statusline+=%l/%L           "cursor line/total lines
+"set statusline+=\ %P            "percent through file
 set laststatus=2
 
 "indent settings
@@ -55,6 +58,9 @@ set softtabstop=4
 set tabstop=4
 set expandtab
 set autoindent
+
+"indent settings for specific langs
+au FileType ruby setlocal ts=2 sw=2 sts=2   "set tabs for Ruby
 
 "folding settings
 set foldmethod=indent           "fold based on indent
@@ -120,3 +126,4 @@ nnoremap <silent> <C-f> :call FindInNERDTree()<CR>
 
 "BufExplorer binding
 noremap <silent> <Leader>b :BufExplorerVerticalSplit<CR>
+let g:bufExplorerShowRelativePath=1
