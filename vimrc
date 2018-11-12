@@ -168,3 +168,9 @@ packadd! matchit         "included matchit plugin
 "NERD_Tree conf
 let NERDTreeWinPos="left"
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
