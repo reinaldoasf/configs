@@ -1,6 +1,3 @@
-[submodule "bundle/vim-pathogen"]
-	path = pack/dvcirilo/start/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
 [submodule "bundle/nerdtree"]
 	path = pack/dvcirilo/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -46,3 +43,6 @@
 [submodule "bundle/lightline.vim"]
 	path = pack/dvcirilo/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
+[submodule "pack/dvcirilo/start/vim-easy-align"]
+	path = pack/dvcirilo/start/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align.git
