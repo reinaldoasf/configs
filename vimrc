@@ -104,6 +104,8 @@ set sessionoptions-=options
 
 "indent settings for specific langs
 au FileType ruby setlocal ts=2 sw=2 sts=2
+au FileType tex setlocal ts=2 sw=2 sts=2
+au FileType markdown setlocal ts=2 sw=2 sts=2
 
 "folding settings
 set foldmethod=indent           "fold based on indent
