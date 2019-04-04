@@ -149,7 +149,7 @@ set undolevels=100         " How many undos
 set undoreload=1000       " number of lines to save for undo
 
 "set railscasts colorscheme when running vim in gnome terminal
-if $TERM == 'xterm-256color'
+if $TERM == 'xterm-256color' || $TERM == 'screen-256color'
   set t_Co=256
   colorscheme railscasts
 else
