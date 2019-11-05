@@ -100,10 +100,15 @@ if !empty(&viminfo)
 endif
 set sessionoptions-=options
 
+" maps latex
+map m o<esc>k
+map t :wa \| !make<CR><CR><CR>
+map T :wa \| !make bibtex<CR><CR><CR>
+map ; :w <CR>
 
 
 "indent settings for specific langs
-au FileType ruby setlocal ts=2 sw=2 sts=2
+"au FileType ruby setlocal ts=2 sw=2 sts=2
 au FileType tex setlocal ts=2 sw=2 sts=2 tw=79 fo+=t fo-=l
 au FileType markdown setlocal ts=2 sw=2 sts=2
 
